@@ -27,7 +27,7 @@ class _OtpVerificationState extends State<OtpVerification> {
         centerTitle: true,
         leading: GestureDetector(
           onTap: () {
-            Navigator.pop(context);
+            Navigator.popAndPushNamed(context, "/auth");;
           },
           child: const Icon(
             Icons.keyboard_arrow_left,
@@ -147,7 +147,9 @@ class _OtpVerificationState extends State<OtpVerification> {
               SizedBox(
                 height: 50,
               ),
-              OtherButton(onpressedfunction: () {}, label: 'Verify'),
+              OtherButton(onpressedfunction: () {
+                Navigator.popAndPushNamed(context, "/completeprofile");
+              }, label: 'Verify'),
               SizedBox(height: 40,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

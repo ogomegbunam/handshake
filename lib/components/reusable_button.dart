@@ -14,6 +14,7 @@ class OtherButton extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return MaterialButton(
+
       padding: EdgeInsets.symmetric(vertical: 13.5),
       minWidth: double.infinity,
       height: 50,

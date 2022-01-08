@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:handshake/screen/authentication.dart';
+import 'package:handshake/screen/complete_profile.dart';
+import 'package:handshake/screen/congratulations.dart';
+import 'package:handshake/screen/home_screen.dart';
 import 'package:handshake/screen/otp_verification.dart';
+import 'package:handshake/screen/output.dart';
 import 'package:handshake/screen/splash_screen.dart';
 
 void main() {
@@ -30,7 +34,14 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         "/auth": (ctx) =>  Authentication(),
-        "/otp": (ctx) =>  OtpVerification(),
+        "/otp": (ctx) =>  const OtpVerification(),
+        "/completeprofile": (ctx) =>  const CompleteProfile(),
+        "/home": (ctx) =>  const Homescreen(),
+        "/output": (ctx) =>  const Output(),
+        "/success": (ctx) =>  const CustomDailog(),
+
+
+
       },
       home:  SplashScreen(),
     );

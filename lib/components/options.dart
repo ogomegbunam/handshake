@@ -37,7 +37,9 @@ class _OptionsState extends State<Options> {
                 children: [
                   Icon(_checkbox
                       ? Icons.radio_button_checked_outlined
-                      : Icons.radio_button_off,color: _checkbox ? kblue : inputColor,)
+                      : Icons.radio_button_off,color: _checkbox ? kblue : inputColor,),
+                  SizedBox(width: 10,),
+                  Text('YES' , style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400,color: _nocheckbox? inputColor:kblue),)
                 ],
               ),
             ),
@@ -64,8 +66,10 @@ class _OptionsState extends State<Options> {
                 children: [
                   Icon(_nocheckbox
                       ? Icons.radio_button_off
-                      : Icons.radio_button_checked_outlined,color: _nocheckbox ? inputColor:kblue,)
-                ],
+                      : Icons.radio_button_checked_outlined,color: _nocheckbox ? inputColor:kblue,),
+                  SizedBox(width: 10,),
+                  Text('NO' , style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400,color: _nocheckbox ? inputColor:kblue),)
+                ]
               ),
             ),
           ),

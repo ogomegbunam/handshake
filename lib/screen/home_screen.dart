@@ -39,7 +39,7 @@ class Homescreen extends StatelessWidget {
 
               HomeButton(
                   onpressedfunction: () {Navigator.popAndPushNamed(context, "/output");},
-                  label: '           View log',
+                  label: '         Handshake History ',
                   asset: 'assets/document.svg'),
 
             ],

@@ -73,13 +73,7 @@ class Authentication extends StatelessWidget {
                 'Phone number',
                 loginController,
               ),
-              SizedBox(
-                height: 30,
-              ),
-              Text(
-                'What\'s my number?',
-                style: kblkheading,
-              ),
+
               SizedBox(
                 height: 50,
               ),

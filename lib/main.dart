@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:handshake/components/country_picker.dart';
+
 import 'package:handshake/screen/authentication.dart';
 import 'package:handshake/screen/complete_profile.dart';
 import 'package:handshake/screen/congratulations.dart';
@@ -31,22 +31,16 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.blue,
-
       ),
       routes: {
-        "/auth": (ctx) =>  Authentication(),
-        "/otp": (ctx) =>  const OtpVerification(),
-        "/completeprofile": (ctx) =>  const CompleteProfile(),
-        "/home": (ctx) =>  const Homescreen(),
-        "/output": (ctx) =>  const Output(),
-        "/success": (ctx) =>  const CustomDailog(),
-
-
-
+        "/auth": (ctx) => Authentication(),
+        "/otp": (ctx) => const OtpVerification(),
+        "/completeprofile": (ctx) => const CompleteProfile(),
+        "/home": (ctx) => const Homescreen(),
+        "/output": (ctx) => const Output(),
+        "/success": (ctx) => const CustomDailog(),
       },
-      home:  SplashScreen(),
+      home: SplashScreen(),
     );
   }
 }
-
-

@@ -17,18 +17,12 @@ class FormInput extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "${label}",
-                style: TextStyle(
-                    fontWeight: FontWeight.w600,
-                    color: Colors.black87,
-                    fontSize: 12),
-              ),
-
-            ],
+          Text(
+            "${label}",
+            style: TextStyle(
+                fontWeight: FontWeight.w600,
+                color: Colors.black87,
+                fontSize: 12),
           ),
           SizedBox(
             height: 10,
